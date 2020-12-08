@@ -3,7 +3,7 @@
 ## Simple Talker demo that publishes std_msgs/Strings messages to the 'chatter' topic
 
 import rospy
-from std_msgs.msgs import String
+from std_msgs.msg import String
 
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)

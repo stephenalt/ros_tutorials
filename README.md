@@ -108,7 +108,14 @@
   <li>(3) run 'catkin_make'</li>
 </ul>
 
-<ul> Running the publisher
+<ul> Writing a Service Node
+  <li>1: Make sure that you have created your ".srv" message definition in your "srv" directory</li>
+  <li>2: In your 'scripts' directory add the server python code</li>
+  <li>3: Add the file to the 'catkin_install_python' macro in your CMakeLists.txt file</li>
+  <li>4: Run catkin_make</li>
+</ul>
+
+<ul>
   <li></li>
   <li></li>
   <li></li>
