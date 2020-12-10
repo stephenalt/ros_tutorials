@@ -115,10 +115,14 @@
   <li>4: Run catkin_make</li>
 </ul>
 
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+<ul> Recording data (creating a bag file)
+  <li>The list of published topics are the only message types that can be recorded in the data log file, as only published messages are recorded. To record the published data...</li>
+  <li>(1) make a "bagfiles" directory, 'cd' into it, and then run 'rosbag record -a'</li>
+  <li>Examining and playing the bag file:</li>
+  <li>'rosbag info [name_of_bag_file.bag]': Checks the contents of the bag file</li>
+  <li>'rosbag play [name_of_bag_file.bag]': Plays the bagfile publishing all the recorded commands</li>
+  <li>Recording a subset of the data:</li>
+  <li>'rosbag record -O subset [topic_1] [topic_n]': -O tells 'rosbag record' to log to a file named subset.bag, and the topic arguments are the only topics that are recorded</li>
+  <li>WARNING: rosbag is NOT precise and has no guarantee of conducting identical behavior, that being said, it is relatively accurate</li>
+  <li>'roswtf': examines your system to try and find problems</li>
 </ul>
